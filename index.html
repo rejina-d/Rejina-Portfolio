@@ -3,154 +3,174 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Rejina Dangal | Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
-  <button class="sidebar-toggle" aria-label="Toggle navigation">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-  <aside class="sidebar-nav">
-    <div class="sidebar-profile">
-      <img src="/photo.jpg" alt="Profile Photo" class="sidebar-profile-photo">
-      <div class="sidebar-profile-name">Rejina Dangal</div>
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="nav-logo">Rejina Dangal</div>
+      <nav class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#blog" class="nav-link">Blog</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-moon"></i>
+      </button>
     </div>
-  </nav>
-  <section class="profile-cute">
-    <div class="profile-photo-badge">
-      <div class="profile-photo-glow"></div>
-      <img src="/photo.jpg" alt="Profile Photo" class="profile-photo">
-    </div>
-    <h1 class="cute-title">I'm <span class="highlight"> Rejina Dangal </span></h1>
-    <p class="subtitle">A Passionate Developer & Designer <span class="cute-peach">🍑</span></p>
-    <div class="profile-contact">
-      <a href="mailto:rejinadangal4@gmail.com"><i class="fa-solid fa-envelope"></i> rejinadangal4@gmail.com </a>
-      <a href="https://github.com/rejina-d" target="_blank"><i class="fa-brands fa-github"></i> github.com/rejina-d</a>
-      <a href="https://linkedin.com/in/rejina-dangal-655153339" target="_blank"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/rejina dangal</a>
-    </div>
-  </section>
+  </header>
   <main>
-    <section id="about">
-      <h2>About Me <span class="cute-dot">•</span></h2>
-      <p>Welcome to my portfolio! I'm a creative developer who loves building beautiful and functional web experiences. I enjoy working with modern technologies and bringing ideas to life with a touch of cuteness and professionalism.</p>
-    </section>
-    <section id="projects">
-      <h2>Projects <span class="cute-dot">•</span></h2>
-      <div class="project-list">
-        <div class="project-card">
-          <h3>Journey To Joy <span class="cute-peach">😄</span></h3>
-          <p>A fun and interactive web app that solves real problems.</p>
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-left">
+          <h1 class="hero-title">Rejina Dangal</h1>
+          <h2 class="hero-subtitle">BIT Student • Frontend Developer • Cloud Enthusiast</h2>
+          <p class="hero-desc">I build elegant, modern web experiences with a passion for design, technology, and the cloud. Welcome to my professional portfolio.</p>
+          <a href="#contact" class="hero-btn">Let's Connect</a>
         </div>
-        <div class="project-card">
-          <h3>Vehicle Rental System <span class="cute-peach">🚗</span></h3>
-          <p>A beautiful design system for modern websites.</p>
-        </div>
-        <div class="project-card">
-          <h3>Mero Samagri <span class="cute-peach">🛒</span></h3>
-          <p>This very portfolio! Designed to be cute, creative, and professional.</p>
-        </div>
-        <div class="project-card">
-          <h3> Blog Management System <span class="cute-peach">📝</span></h3>
-          <p>A productivity app to help you organize your day with style and fun.</p>
+        <div class="hero-right">
+          <img src="photo.jpg" alt="Profile Photo" class="hero-photo">
         </div>
       </div>
     </section>
-    <section id="skills">
-      <h2>Skills <span class="cute-dot">•</span></h2>
-      <ul class="skills-list">
-        <li>Django</li>
-        <li>Python</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Java</li>
-        <li>Figma</li>
-        <li>Wireframing</li>
-        <li>Responsive Design</li>
-        <li>Git & GitHub</li>
-        <li>Teamwork</li>
-        <li>Creativity</li>
-      </ul>
+    <section id="about" class="card-section" data-aos="fade-up">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I'm a creative developer who loves building beautiful and functional web experiences. I enjoy working with modern technologies and bringing ideas to life with a touch of elegance and professionalism.</p>
+      </div>
     </section>
-    <section id="cv" class="cv-section">
-      <h2>My CV <span class="cute-dot">•</span></h2>
-      <p>You can view or download my CV below!</p>
-      <a href="https://drive.google.com/file/d/1IsCiyf7LWpxWanQEC_4m8d3Zk9e0bcEt/view?usp=sharing" class="cv-btn" target="_blank">
-        <i class="fa-solid fa-file-lines"></i> View My CV
-      </a>
+    <section id="projects" class="card-section" data-aos="fade-up">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-list">
+          <div class="project-card">
+            <h3>Journey To Joy</h3>
+            <p>A fun and interactive web app that solves real problems.</p>
+          </div>
+          <div class="project-card">
+            <h3>Vehicle Rental System</h3>
+            <p>A beautiful design system for modern websites.</p>
+          </div>
+          <div class="project-card">
+            <h3>Mero Samagri</h3>
+            <p>This very portfolio! Designed to be elegant, creative, and professional.</p>
+          </div>
+          <div class="project-card">
+            <h3>Blog Management System</h3>
+            <p>A productivity app to help you organize your day with style and fun.</p>
+          </div>
+        </div>
+      </div>
     </section>
-    <section id="contact">
-      <h2>Contact <span class="cute-dot">•</span></h2>
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message <span class="badge-heart">♥</span></button>
-      </form>
+    <section id="education" class="card-section" data-aos="fade-up">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="education-list">
+          <div class="education-item">
+            <div class="education-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="education-content">
+              <h3>Bachelor in Information Technology (BIT)</h3>
+              <div class="education-school">Your University Name</div>
+              <div class="education-year">2021 - Present</div>
+              <div class="education-description">Pursuing a comprehensive curriculum in IT, software development, and cloud technologies.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="card-section" data-aos="fade-up">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>Django</li>
+          <li>Python</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Java</li>
+          <li>Figma</li>
+          <li>Wireframing</li>
+          <li>Responsive Design</li>
+          <li>Git & GitHub</li>
+          <li>Teamwork</li>
+          <li>Creativity</li>
+        </ul>
+      </div>
+    </section>
+    <section id="contact" class="card-section" data-aos="fade-up">
+      <div class="container">
+        <h2>Contact</h2>
+        <form id="contactForm" class="contact-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <div id="form-success" style="display:none; color: #1565c0; margin-top: 10px;">Thank you! Your message has been sent.</div>
+        <div class="contact-links">
+          <a href="mailto:rejinadangal4@gmail.com"><i class="fa-solid fa-envelope"></i> rejinadangal4@gmail.com</a>
+          <a href="https://github.com/rejina-d" target="_blank"><i class="fa-brands fa-github"></i> github.com/rejina-d</a>
+          <a href="https://linkedin.com/in/rejina-dangal-655153339" target="_blank"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/rejina-dangal</a>
+        </div>
+      </div>
+    </section>
+    <section id="cv" class="card-section" data-aos="fade-up">
+      <div class="container">
+        <h2>My CV</h2>
+        <a href="https://drive.google.com/file/d/1IsCiyf7LWpxWanQEC_4m8d3Zk9e0bcEt/view?usp=sharing" class="cv-btn" target="_blank">
+          <i class="fa-solid fa-file-lines"></i> View My CV
+        </a>
+      </div>
     </section>
   </main>
   <footer>
-    <p>© 2024 Your Name. Made with <span class="heart">♥</span></p>
+    <div class="container">
+      <p>© 2024 Rejina Dangal. Made with <span class="heart">♥</span></p>
+    </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
-    AOS.init({
-      duration: 900,
-      once: true
+    AOS.init({ duration: 900, once: true });
+    // Dark mode toggle logic
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    function setDarkMode(on) {
+      document.body.classList.toggle('dark-mode', on);
+      localStorage.setItem('darkMode', on ? '1' : '0');
+      darkModeToggle.innerHTML = on
+        ? '<i class="fa-solid fa-sun"></i>'
+        : '<i class="fa-solid fa-moon"></i>';
+    }
+    // Initial mode
+    const saved = localStorage.getItem('darkMode');
+    setDarkMode(saved === '1' || (saved === null && prefersDark));
+    darkModeToggle.addEventListener('click', () => {
+      setDarkMode(!document.body.classList.contains('dark-mode'));
     });
-    
-    // Sidebar toggle functionality
-    const sidebarToggle = document.querySelector('.sidebar-toggle');
-    const sidebarNav = document.querySelector('.sidebar-nav');
-    
-    sidebarToggle.addEventListener('click', () => {
-      sidebarNav.classList.toggle('open');
-      sidebarToggle.classList.toggle('open');
-    });
-    
-    // Close sidebar when clicking on a link (mobile)
-    document.querySelectorAll('.sidebar-link').forEach(link => {
-      link.addEventListener('click', () => {
-        if (window.innerWidth <= 1200) {
-          sidebarNav.classList.remove('open');
-          sidebarToggle.classList.remove('open');
-        }
-      });
-    });
-    
-    // Smooth scroll for sidebar links
-    document.querySelectorAll('.sidebar-link').forEach(link => {
-      link.addEventListener('click', function(e) {
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth' });
-        }
-      });
-    });
-    
-    // Highlight active sidebar link on scroll
-    const sections = document.querySelectorAll('main section');
-    const sidebarLinks = document.querySelectorAll('.sidebar-link');
+    // Navbar active link highlight
+    const navLinks = document.querySelectorAll('.nav-link');
     window.addEventListener('scroll', () => {
       let current = '';
-      sections.forEach(section => {
+      document.querySelectorAll('main section').forEach(section => {
         const sectionTop = section.offsetTop - 120;
         if (pageYOffset >= sectionTop) {
           current = section.getAttribute('id');
         }
       });
-      sidebarLinks.forEach(link => {
+      navLinks.forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('href') === '#' + current) {
           link.classList.add('active');
         }
       });
     });
-    
     // Contact form success message
     document.getElementById('contactForm').addEventListener('submit', function(e) {
       e.preventDefault();
@@ -159,14 +179,6 @@
       setTimeout(() => {
         document.getElementById('form-success').style.display = 'none';
       }, 4000);
-    });
-    
-    // Smooth scroll for "A little about me" button
-    document.getElementById('aboutMeBtn').addEventListener('click', function() {
-      const aboutSection = document.getElementById('about');
-      if (aboutSection) {
-        aboutSection.scrollIntoView({ behavior: 'smooth' });
-      }
     });
   </script>
 </body>
