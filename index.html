@@ -12,7 +12,7 @@
 <body>
   <header class="navbar">
     <div class="container nav-container">
-      <div class="nav-logo">Rejina Dangal</div>
+      <div class="nav-logo">RD</div>
       <button id="mobileMenuToggle" class="mobile-menu-toggle" aria-label="Open navigation" style="display:none;">
         <i class="fa-solid fa-bars"></i>
       </button>
@@ -36,6 +36,7 @@
           <h2 class="hero-subtitle">BIT Student • Frontend Developer • Cloud Enthusiast</h2>
           <p class="hero-desc">I build elegant, modern web experiences with a passion for design, technology, and the cloud. Welcome to my professional portfolio.</p>
           <a href="#contact" class="hero-btn">Let's Connect</a>
+          <a href="https://drive.google.com/file/d/1rDRN_hur-1K6x2DaxKfiOIzNc3bkCbZA/view?usp=sharing" class="hero-btn hero-btn-secondary" target="_blank" style="margin-left: 1rem;"><i class="fa-solid fa-file-lines"></i> My Resume</a>
         </div>
         <div class="hero-right">
           <img src="photo.jpg" alt="Profile Photo" class="hero-photo">
@@ -55,18 +56,22 @@
           <div class="project-card">
             <h3>Journey To Joy</h3>
             <p>A fun and interactive web app that solves real problems.</p>
+            <a href="https://github.com/rejina-d/JourneyToJoy.git" class="project-github" target="_blank"><i class="fa-brands fa-github"></i> GitHub Repo</a>
           </div>
           <div class="project-card">
             <h3>Vehicle Rental System</h3>
             <p>A beautiful design system for modern websites.</p>
+            <a href="https://github.com/rejina-d/vehicle-rental-system.git" class="project-github" target="_blank"><i class="fa-brands fa-github"></i> GitHub Repo</a>
           </div>
           <div class="project-card">
             <h3>Mero Samagri</h3>
             <p>This very portfolio! Designed to be elegant, creative, and professional.</p>
+            <a href="" class="project-github" target="_blank"><i class="fa-brands fa-github"></i> GitHub Repo</a>
           </div>
           <div class="project-card">
             <h3>Blog Management System</h3>
             <p>A productivity app to help you organize your day with style and fun.</p>
+            <a href="https://github.com/RupSagarGautam/Blog_Management_System.git" class="project-github" target="_blank"><i class="fa-brands fa-github"></i> GitHub Repo</a>
           </div>
         </div>
       </div>
@@ -79,9 +84,27 @@
             <div class="education-icon"><i class="fa-solid fa-graduation-cap"></i></div>
             <div class="education-content">
               <h3>Bachelor in Information Technology (BIT)</h3>
-              <div class="education-school">Your University Name</div>
-              <div class="education-year">2021 - Present</div>
+              <div class="education-school">Itahari International College</div>
+              <div class="education-year">2024 - Present</div>
               <div class="education-description">Pursuing a comprehensive curriculum in IT, software development, and cloud technologies.</div>
+            </div>
+          </div>
+          <div class="education-item">
+            <div class="education-icon"><i class="fa-solid fa-school"></i></div>
+            <div class="education-content">
+              <h3>+2 (Higher Secondary)</h3>
+              <div class="education-school">Koshi Saint James</div>
+              <div class="education-year">2022 - 2023</div>
+              <div class="education-description">Completed higher secondary education with a focus on science and mathematics.</div>
+            </div>
+          </div>
+          <div class="education-item">
+            <div class="education-icon"><i class="fa-solid fa-book"></i></div>
+            <div class="education-content">
+              <h3>Schooling (SEE/SLC)</h3>
+              <div class="education-school">Horizon Academy</div>
+              <div class="education-year">2020</div>
+              <div class="education-description">Completed school level education with distinction.</div>
             </div>
           </div>
         </div>
@@ -89,7 +112,11 @@
     </section>
     <section id="skills" class="card-section" data-aos="fade-up">
       <div class="container">
-        <h2>Skills</h2>
+        <div class="skills-header">
+          <span class="skills-icon"><i class="fa-solid fa-lightbulb"></i></span>
+          <h2>Skills</h2>
+          <div class="skills-highlight"></div>
+        </div>
         <ul class="skills-list">
           <li>Django</li>
           <li>Python</li>
@@ -106,34 +133,34 @@
       </div>
     </section>
     <section id="contact" class="card-section" data-aos="fade-up">
-      <div class="container">
-        <h2>Contact</h2>
-        <form id="contactForm" class="contact-form">
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
-          <textarea placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-        <div id="form-success" style="display:none; color: #1565c0; margin-top: 10px;">Thank you! Your message has been sent.</div>
-        <div class="contact-links">
-          <a href="mailto:rejinadangal4@gmail.com"><i class="fa-solid fa-envelope"></i> rejinadangal4@gmail.com</a>
-          <a href="https://github.com/rejina-d" target="_blank"><i class="fa-brands fa-github"></i> github.com/rejina-d</a>
-          <a href="https://linkedin.com/in/rejina-dangal-655153339" target="_blank"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/rejina-dangal</a>
+      <div class="container contact-container">
+        <div class="contact-info">
+          <div class="contact-illustration">
+            <i class="fa-solid fa-paper-plane fa-3x"></i>
+          </div>
+          <h2>Contact</h2>
+          <p class="contact-invite">I'd love to hear from you! Whether you have a question, a project idea, or just want to say hello, feel free to reach out.</p>
         </div>
-      </div>
-    </section>
-    <section id="cv" class="card-section" data-aos="fade-up">
-      <div class="container">
-        <h2>My CV</h2>
-        <a href="https://drive.google.com/file/d/1IsCiyf7LWpxWanQEC_4m8d3Zk9e0bcEt/view?usp=sharing" class="cv-btn" target="_blank">
-          <i class="fa-solid fa-file-lines"></i> View My CV
-        </a>
+        <div class="contact-main">
+          <form id="contactForm" class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+          <div id="form-success" style="display:none; color: #1565c0; margin-top: 10px;">Thank you! Your message has been sent.</div>
+          <div class="contact-links">
+            <a href="mailto:rejinadangal4@gmail.com"><i class="fa-solid fa-envelope"></i> rejinadangal4@gmail.com</a>
+            <a href="https://github.com/rejina-d" target="_blank"><i class="fa-brands fa-github"></i> github.com/rejina-d</a>
+            <a href="https://linkedin.com/in/rejina-dangal-655153339" target="_blank"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/rejina-dangal</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
   <footer>
     <div class="container">
-      <p>© 2024 Rejina Dangal. Made with <span class="heart">♥</span></p>
+      <p>© 2025 Rejina Dangal.<p>
     </div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
