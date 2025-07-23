@@ -13,13 +13,14 @@
   <header class="navbar">
     <div class="container nav-container">
       <div class="nav-logo">Rejina Dangal</div>
-      <nav class="nav-links">
+      <button id="mobileMenuToggle" class="mobile-menu-toggle" aria-label="Open navigation" style="display:none;">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav class="nav-links" id="navLinks">
         <a href="#about" class="nav-link">About</a>
         <a href="#projects" class="nav-link">Projects</a>
         <a href="#education" class="nav-link">Education</a>
         <a href="#skills" class="nav-link">Skills</a>
-        <a href="#blog" class="nav-link">Blog</a>
-        <a href="#testimonials" class="nav-link">Testimonials</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
       <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
@@ -171,6 +172,26 @@
         }
       });
     });
+    // Mobile menu toggle logic
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const navLinksContainer = document.getElementById('navLinks');
+    mobileMenuToggle.addEventListener('click', () => {
+      navLinksContainer.classList.toggle('open');
+      mobileMenuToggle.classList.toggle('open');
+    });
+    // Show/hide mobile menu button based on screen size
+    function handleResize() {
+      if (window.innerWidth <= 700) {
+        mobileMenuToggle.style.display = 'block';
+        navLinksContainer.classList.add('mobile');
+      } else {
+        mobileMenuToggle.style.display = 'none';
+        navLinksContainer.classList.remove('mobile', 'open');
+        mobileMenuToggle.classList.remove('open');
+      }
+    }
+    window.addEventListener('resize', handleResize);
+    handleResize();
     // Contact form success message
     document.getElementById('contactForm').addEventListener('submit', function(e) {
       e.preventDefault();
