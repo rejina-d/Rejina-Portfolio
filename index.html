@@ -20,6 +20,7 @@
         <a href="#about" class="nav-link">About</a>
         <a href="#projects" class="nav-link">Projects</a>
         <a href="#education" class="nav-link">Education</a>
+        <a href="#certificates" class="nav-link">Certificates</a>
         <a href="#skills" class="nav-link">Skills</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
@@ -56,22 +57,22 @@
           <div class="project-card">
             <h3>Journey To Joy</h3>
             <p>A website built to help people find their inner peace and happiness.</p>
-            <a href="https://github.com/rejina-d/JourneyToJoy.git" class="project-github" target="_blank"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+            <a href="https://github.com/rejina-d/JourneyToJoy.git" class="project-github" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
           </div>
           <div class="project-card">
             <h3>Vehicle Rental System</h3>
             <p>A website built to help people rent vehicles easily and efficiently.</p>
-            <a href="https://github.com/rejina-d/vehicle-rental-system.git" class="project-github" target="_blank"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+            <a href="https://github.com/rejina-d/vehicle-rental-system.git" class="project-github" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
           </div>
           <div class="project-card">
             <h3>Mero Samagri</h3>
             <p>This is a website for buying grocery products.</p>
-            <a href="" class="project-github" target="_blank"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+            <a href="" class="project-github" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
           </div>
           <div class="project-card">
             <h3>Blog Management System</h3>
             <p>A system build for managing and posting blogs.</p>
-            <a href="https://github.com/RupSagarGautam/Blog_Management_System.git" class="project-github" target="_blank"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+            <a href="https://github.com/RupSagarGautam/Blog_Management_System.git" class="project-github" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
           </div>
         </div>
       </div>
@@ -94,7 +95,7 @@
             <div class="education-content">
               <h3>+2 (Higher Secondary)</h3>
               <div class="education-school">Koshi Saint James</div>
-              <div class="education-year">2022 - 2023</div>
+              <div class="education-year">2022 - 2024</div>
               <div class="education-description">Completed higher secondary education with a focus on science and mathematics.</div>
             </div>
           </div>
@@ -103,8 +104,58 @@
             <div class="education-content">
               <h3>Schooling (SEE/SLC)</h3>
               <div class="education-school">Horizon Academy</div>
-              <div class="education-year">2020</div>
+              <div class="education-year">2021</div>
               <div class="education-description">Completed school level education with distinction.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Certificates Section -->
+    <section id="certificates" class="card-section" data-aos="fade-up">
+      <div class="container">
+        <h2>Certificates</h2>
+        <div class="certificate-list">
+          <div class="certificate-card">
+            <i class="fa-brands fa-aws certificate-icon"></i>
+            <div class="certificate-content">
+              <h3>AWS Academy Cloud Foundations
+                <a href="https://drive.google.com/file/d/1uJDbzJzz6AGBN2XO3I4DzjaT7d-vU6JE/view?usp=sharing" class="certificate-link" target="_blank" aria-label="View Certificate"><i class="fa-solid fa-link"></i></a>
+              </h3>
+              <div class="certificate-org">Amazon Web Services (AWS)</div>
+              <div class="certificate-year">2024</div>
+            </div>
+          </div>
+          <div class="certificate-card">
+            <i class="fa-brands fa-aws certificate-icon"></i>
+            <div class="certificate-content">
+              <h3>AWS Academy Machine Learning
+                for Natural Language Processing
+                <a href="https://drive.google.com/file/d/17Fuco6YPGbIh4mUcIN3DMepWYHHWxjxp/view?usp=sharing" class="certificate-link" target="_blank" aria-label="View Certificate"><i class="fa-solid fa-link"></i></a>
+              </h3>
+              <div class="certificate-org">Amazon Web Services (AWS)</div>
+              <div class="certificate-year">2024</div>
+            </div>
+          </div>
+          <div class="certificate-card">
+            <i class="fa-brands fa-aws certificate-icon"></i>
+            <div class="certificate-content">
+              <h3>AWS Academy Data Engineering
+                <a href="https://drive.google.com/file/d/1ug_sFjaxwKQgxMPHgcnvBE5f3Vafl5Mm/view?usp=sharing" class="certificate-link" target="_blank" aria-label="View Certificate"><i class="fa-solid fa-link"></i></a>
+              </h3>
+              <div class="certificate-org">Amazon Web Services (AWS)</div>
+              <div class="certificate-year">2024</div>
+            </div>
+          </div>
+          <div class="certificate-card">
+            <i class="fa-brands fa-aws certificate-icon"></i>
+            <div class="certificate-content">
+              <h3>AWS Academy Machine Learning
+                Foundations
+                <a href="https://drive.google.com/file/d/1cR0xMrc0CxGQqary-VAHUB6vpnF8Ec79/view?usp=sharing" class="certificate-link" target="_blank" aria-label="View Certificate"><i class="fa-solid fa-link"></i></a>
+              </h3>
+              <div class="certificate-org">Amazon Web Services (AWS)</div>
+              <div class="certificate-year">2024</div>
             </div>
           </div>
         </div>
@@ -178,7 +229,7 @@
     }
     // Initial mode
     const saved = localStorage.getItem('darkMode');
-    setDarkMode(saved === '1' || (saved === null && prefersDark));
+    setDarkMode(saved === '1' || (saved === null && true)); // Default to dark mode if no preference
     darkModeToggle.addEventListener('click', () => {
       setDarkMode(!document.body.classList.contains('dark-mode'));
     });
