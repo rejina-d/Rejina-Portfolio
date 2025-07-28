@@ -618,6 +618,28 @@ body, .navbar, .card-section, .project-card, .education-item, .skills-list li, .
   }
 }
 @media (max-width: 700px) {
+  .nav-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  .nav-logo {
+    order: 1;
+  }
+  .dark-mode-toggle {
+    order: 2;
+    margin-left: 0.5rem;
+    margin-right: 0;
+  }
+  .mobile-menu-toggle {
+    order: 3;
+    margin-left: 0.5rem;
+    margin-right: 0.2rem;
+    position: static;
+  }
+}
+@media (max-width: 700px) {
   .nav-links {
     width: 100vw;
     left: 50%;
@@ -641,6 +663,22 @@ body {
   .hero-left, .hero-right {
     width: 100%;
     flex: unset;
+  }
+  .hero-left {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .hero-photo {
+    display: block;
+    margin: 0 auto;
+    position: static;
   }
   .hero-title {
     font-size: 1.1rem;
@@ -1078,4 +1116,130 @@ body {
 .dark-mode .certificate-year {
   color: #fff;
   background: rgba(100, 181, 246, 0.18);
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 0 0.2rem;
+  }
+  .navbar {
+    padding: 0.4rem 0;
+  }
+  .nav-logo {
+    font-size: 1rem;
+  }
+  .nav-link {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.7rem;
+  }
+  .hero-section {
+    padding: 0.5rem 0;
+    border-radius: 0.5rem;
+    min-height: 10vh;
+  }
+  .hero-title {
+    font-size: 0.9rem;
+  }
+  .hero-photo {
+    width: 50px;
+    height: 50px;
+    border-width: 2px;
+  }
+  .card-section {
+    padding: 0.3rem 0.1rem;
+    border-radius: 0.3rem;
+  }
+  .project-list {
+    gap: 0.3rem;
+  }
+  .project-card {
+    padding: 0.7rem 0.3rem 1rem 0.3rem;
+    border-radius: 0.5rem;
+    min-height: 80px;
+  }
+  .project-card h3, .certificate-content h3 {
+    font-size: 0.9rem;
+    word-break: break-word;
+  }
+  .project-card p, .certificate-org, .certificate-year {
+    font-size: 0.85rem;
+    word-break: break-word;
+  }
+  .project-github {
+    width: 1.2em;
+    height: 1.2em;
+    font-size: 0.9em;
+    padding: 0.1em 0.2em;
+  }
+  .skills-list {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+  .skills-list li {
+    padding: 0.7rem 0.5rem;
+    font-size: 0.85rem;
+  }
+  .education-item {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    gap: 0.5rem;
+  }
+  .education-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+  .contact-form {
+    padding: 0.2rem;
+    gap: 0.5rem;
+  }
+  .contact-form input, .contact-form textarea {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.7rem;
+  }
+  .contact-form button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.7rem;
+  }
+  .contact-links {
+    font-size: 0.85rem;
+    gap: 0.2rem;
+  }
+  .cv-btn {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.7rem;
+  }
+  .certificate-list {
+    gap: 0.3rem;
+  }
+  .certificate-card {
+    padding: 0.5rem 0.2rem;
+    border-radius: 0.3rem;
+    min-height: 60px;
+  }
+  .certificate-icon {
+    font-size: 1rem;
+    margin-right: 0.3rem;
+  }
+  .certificate-link {
+    font-size: 0.9em;
+    margin-left: 0.2em;
+  }
+  .contact-container {
+    gap: 0.5rem;
+  }
+  .contact-info h2 {
+    font-size: 1.1rem;
+  }
+  .contact-invite {
+    font-size: 0.85rem;
+    max-width: 180px;
+  }
+  .contact-main {
+    padding: 0.2rem 0 0.2rem 0.2rem;
+  }
+  footer {
+    font-size: 0.8rem;
+    padding: 0.3rem 0 0.2rem 0;
+  }
 }
