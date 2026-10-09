@@ -5,17 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rejina Dangal | Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
   <header class="navbar">
     <div class="container nav-container">
       <div class="nav-logo">RD</div>
-      <button id="mobileMenuToggle" class="mobile-menu-toggle" aria-label="Open navigation" style="display:none;">
-        <i class="fa-solid fa-bars"></i>
-      </button>
       <nav class="nav-links" id="navLinks">
         <a href="#about" class="nav-link">About</a>
         <a href="#projects" class="nav-link">Projects</a>
@@ -24,67 +20,101 @@
         <a href="#skills" class="nav-link">Skills</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
-      <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
-        <i class="fa-solid fa-moon"></i>
-      </button>
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button id="mobileMenuToggle" class="mobile-menu-toggle" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
     </div>
   </header>
+
   <main>
     <section class="hero-section" id="home">
       <div class="container hero-container">
         <div class="hero-left">
-          <h1 class="hero-title">Rejina Dangal</h1>
-          <h2 class="hero-subtitle">BIT Student • Web Developer • Cloud Enthusiast</h2>
-          <p class="hero-desc">I build elegant, modern web experiences with a passion for design, technology, and the cloud. Welcome to my professional portfolio.</p>
-          <a href="#contact" class="hero-btn">Let's Connect</a>
-          <a href="https://drive.google.com/file/d/1rDRN_hur-1K6x2DaxKfiOIzNc3bkCbZA/view?usp=sharing" class="hero-btn hero-btn-secondary" target="_blank" style="margin-left: 1rem;"><i class="fa-solid fa-file-lines"></i> My Resume</a>
+          <h1>Hi, I'm <span>Rejina Dangal</span></h1>
+          <p class="hero-subtitle">BIT Student • Web Developer • Cloud Enthusiast</p>
+          <p class="hero-desc">I build elegant, modern web experiences with a passion for design, technology, and the cloud. Welcome to my little corner of the internet.</p>
+          <div class="hero-buttons">
+            <a href="#contact" class="hero-btn hero-btn-primary">Let's Connect</a>
+            <a href="https://drive.google.com/file/d/1wWkK6f1Sm6JnKTRZU2NN-GDWujq57CXH/view?usp=sharing" class="hero-btn hero-btn-secondary" target="_blank">
+              <i class="fa-solid fa-file-lines"></i> My Resume
+            </a>
+          </div>
         </div>
         <div class="hero-right">
-          <img src="photo.jpg" alt="Profile Photo" class="hero-photo">
+          <img src="photo.jpg" alt="Rejina Dangal" class="hero-photo">
         </div>
       </div>
     </section>
-    <section id="about" class="card-section" data-aos="fade-up">
+
+    <section id="about">
       <div class="container">
-        <h2>About Me</h2>
-        <p>I'm a creative developer who loves building beautiful and functional web experiences. I enjoy working with modern technologies and bringing ideas to life with a touch of elegance and professionalism.</p>
+        <div class="section-header">
+          <h2>About Me</h2>
+          <p>A quick glimpse into who I am and what I love doing</p>
+        </div>
+        <div class="about-content">
+          <p>I'm a creative developer who loves building beautiful and functional web experiences. I enjoy working with modern technologies and bringing ideas to life with a touch of elegance and professionalism.</p>
+        </div>
       </div>
     </section>
-    <section id="projects" class="card-section" data-aos="fade-up">
+
+    <section id="projects">
       <div class="container">
-        <h2>Projects</h2>
+        <div class="section-header">
+          <h2>Projects</h2>
+          <p>Some things I've built and worked on</p>
+        </div>
         <div class="project-list">
           <div class="project-card">
             <h3>Journey To Joy</h3>
             <p>A website built to help people find their inner peace and happiness.</p>
-            <a href="https://github.com/rejina-d/JourneyToJoy.git" class="project-github" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
+            <a href="https://github.com/rejina-d/JourneyToJoy.git" class="project-github" target="_blank">
+              <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
           </div>
           <div class="project-card">
             <h3>Vehicle Rental System</h3>
             <p>A website built to help people rent vehicles easily and efficiently.</p>
-            <a href="https://github.com/rejina-d/vehicle-rental-system.git" class="project-github" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
+            <a href="https://github.com/rejina-d/vehicle-rental-system.git" class="project-github" target="_blank">
+              <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
           </div>
           <div class="project-card">
-            <h3>Mero Samagri</h3>
-            <p>This is a website for buying grocery products.</p>
-            <a href="" class="project-github" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
+            <h3>SkillSync</h3>
+            <p>A platform for sharing and exchanging skills online - connect with others to learn and teach!</p>
+            <a href="#" class="project-github">
+              <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
           </div>
           <div class="project-card">
             <h3>Blog Management System</h3>
-            <p>A system build for managing and posting blogs.</p>
-            <a href="https://github.com/RupSagarGautam/Blog_Management_System.git" class="project-github" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
+            <p>A system built for managing and posting blogs.</p>
+            <a href="https://github.com/RupSagarGautam/Blog_Management_System.git" class="project-github" target="_blank">
+              <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
           </div>
           <div class="project-card">
             <h3>Client Management System</h3>
-            <p>A system build for administrators to manage staff accounts and allows staff members to handle client data.</p>
-            <a href="https://github.com/RupSagarGautam/CLMS.git" class="project-github" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
+            <p>A system built for administrators to manage staff accounts and allows staff members to handle client data.</p>
+            <a href="https://github.com/RupSagarGautam/CLMS.git" class="project-github" target="_blank">
+              <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
           </div>
         </div>
       </div>
     </section>
-    <section id="education" class="card-section" data-aos="fade-up">
+
+    <section id="education">
       <div class="container">
-        <h2>Education</h2>
+        <div class="section-header">
+          <h2>Education</h2>
+          <p>My academic journey and achievements</p>
+        </div>
         <div class="education-list">
           <div class="education-item">
             <div class="education-icon"><i class="fa-solid fa-graduation-cap"></i></div>
@@ -116,16 +146,30 @@
         </div>
       </div>
     </section>
-    <!-- Certificates Section -->
-    <section id="certificates" class="card-section" data-aos="fade-up">
+
+    <section id="certificates">
       <div class="container">
-        <h2>Certificates</h2>
+        <div class="section-header">
+          <h2>Certificates</h2>
+          <p>Credentials that back up my skills</p>
+        </div>
         <div class="certificate-list">
           <div class="certificate-card">
             <i class="fa-brands fa-aws certificate-icon"></i>
             <div class="certificate-content">
-              <h3>AWS Academy Cloud Foundations
-                <a href="https://drive.google.com/file/d/1uJDbzJzz6AGBN2XO3I4DzjaT7d-vU6JE/view?usp=sharing" class="certificate-link" target="_blank" aria-label="View Certificate"><i class="fa-solid fa-link"></i></a>
+              <h3>
+                <a href="https://drive.google.com/file/d/1B2TuysFjdmGF5wf4KFGWBRp3dvFTCPWv/view?usp=sharing" target="_blank">Internship Certificate</a>
+              </h3>
+              <div class="certificate-org">Web Development Internship</div>
+              <div class="certificate-year">2025</div>
+            </div>
+          </div>
+        <div class="certificate-list">
+          <div class="certificate-card">
+            <i class="fa-brands fa-aws certificate-icon"></i>
+            <div class="certificate-content">
+              <h3>
+                <a href="https://drive.google.com/file/d/1uJDbzJzz6AGBN2XO3I4DzjaT7d-vU6JE/view?usp=sharing" target="_blank">AWS Academy Cloud Foundations</a>
               </h3>
               <div class="certificate-org">Amazon Web Services (AWS)</div>
               <div class="certificate-year">2024</div>
@@ -134,9 +178,8 @@
           <div class="certificate-card">
             <i class="fa-brands fa-aws certificate-icon"></i>
             <div class="certificate-content">
-              <h3>AWS Academy Machine Learning
-                for Natural Language Processing
-                <a href="https://drive.google.com/file/d/17Fuco6YPGbIh4mUcIN3DMepWYHHWxjxp/view?usp=sharing" class="certificate-link" target="_blank" aria-label="View Certificate"><i class="fa-solid fa-link"></i></a>
+              <h3>
+                <a href="https://drive.google.com/file/d/17Fuco6YPGbIh4mUcIN3DMepWYHHWxjxp/view?usp=sharing" target="_blank">AWS Academy Machine Learning for Natural Language Processing</a>
               </h3>
               <div class="certificate-org">Amazon Web Services (AWS)</div>
               <div class="certificate-year">2024</div>
@@ -145,8 +188,8 @@
           <div class="certificate-card">
             <i class="fa-brands fa-aws certificate-icon"></i>
             <div class="certificate-content">
-              <h3>AWS Academy Data Engineering
-                <a href="https://drive.google.com/file/d/1ug_sFjaxwKQgxMPHgcnvBE5f3Vafl5Mm/view?usp=sharing" class="certificate-link" target="_blank" aria-label="View Certificate"><i class="fa-solid fa-link"></i></a>
+              <h3>
+                <a href="https://drive.google.com/file/d/1ug_sFjaxwKQgxMPHgcnvBE5f3Vafl5Mm/view?usp=sharing" target="_blank">AWS Academy Data Engineering</a>
               </h3>
               <div class="certificate-org">Amazon Web Services (AWS)</div>
               <div class="certificate-year">2024</div>
@@ -155,9 +198,8 @@
           <div class="certificate-card">
             <i class="fa-brands fa-aws certificate-icon"></i>
             <div class="certificate-content">
-              <h3>AWS Academy Machine Learning
-                Foundations
-                <a href="https://drive.google.com/file/d/1cR0xMrc0CxGQqary-VAHUB6vpnF8Ec79/view?usp=sharing" class="certificate-link" target="_blank" aria-label="View Certificate"><i class="fa-solid fa-link"></i></a>
+              <h3>
+                <a href="https://drive.google.com/file/d/1cR0xMrc0CxGQqary-VAHUB6vpnF8Ec79/view?usp=sharing" target="_blank">AWS Academy Machine Learning Foundations</a>
               </h3>
               <div class="certificate-org">Amazon Web Services (AWS)</div>
               <div class="certificate-year">2024</div>
@@ -166,12 +208,12 @@
         </div>
       </div>
     </section>
-    <section id="skills" class="card-section" data-aos="fade-up">
+
+    <section id="skills">
       <div class="container">
-        <div class="skills-header">
-          <span class="skills-icon"><i class="fa-solid fa-lightbulb"></i></span>
+        <div class="section-header">
           <h2>Skills</h2>
-          <div class="skills-highlight"></div>
+          <p>Things I've learned and can help you with</p>
         </div>
         <ul class="skills-list">
           <li>Django</li>
@@ -188,62 +230,47 @@
         </ul>
       </div>
     </section>
-    <section id="contact" class="card-section" data-aos="fade-up">
-      <div class="container contact-container">
-        <div class="contact-info">
-          <div class="contact-illustration">
-            <i class="fa-solid fa-paper-plane fa-3x"></i>
-          </div>
-          <h2>Contact</h2>
-          <p class="contact-invite">I'd love to hear from you! Whether you have a question, a project idea, or just want to say hello, feel free to reach out.</p>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Get in Touch</h2>
+          <p>I'd love to hear from you! Let's connect.</p>
         </div>
-        <div class="contact-main">
-          <form id="contactForm" class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-          </form>
-          <div id="form-success" style="display:none; color: #1565c0; margin-top: 10px;">Thank you! Your message has been sent.</div>
-          <div class="contact-links">
-            <a href="mailto:rejinadangal4@gmail.com"><i class="fa-solid fa-envelope"></i> rejinadangal4@gmail.com</a>
-            <a href="https://github.com/rejina-d" target="_blank"><i class="fa-brands fa-github"></i> github.com/rejina-d</a>
-            <a href="https://linkedin.com/in/rejina-dangal-655153339" target="_blank"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/rejina-dangal</a>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h2>Contact</h2>
+            <p class="contact-invite">Feel free to reach out for anything. I'm always open to discussing new projects, creative ideas, or opportunities.</p>
+            <div class="contact-links">
+              <a href="mailto:rejinadangal4@gmail.com">
+                <i class="fa-solid fa-envelope"></i> rejinadangal4@gmail.com
+              </a>
+              <a href="https://github.com/rejina-d" target="_blank">
+                <i class="fa-brands fa-github"></i> github.com/rejina-d
+              </a>
+              <a href="https://linkedin.com/in/rejina-dangal-655153339" target="_blank">
+                <i class="fa-brands fa-linkedin"></i> linkedin.com/in/rejina-dangal
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
+
   <footer>
     <div class="container">
-      <p>© 2025 Rejina Dangal.<p>
+      <p>© 2024 Rejina Dangal. All rights reserved.</p>
     </div>
   </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
   <script>
-    AOS.init({ duration: 900, once: true });
-    // Dark mode toggle logic
-    const darkModeToggle = document.getElementById('darkModeToggle');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    function setDarkMode(on) {
-      document.body.classList.toggle('dark-mode', on);
-      localStorage.setItem('darkMode', on ? '1' : '0');
-      darkModeToggle.innerHTML = on
-        ? '<i class="fa-solid fa-sun"></i>'
-        : '<i class="fa-solid fa-moon"></i>';
-    }
-    // Initial mode
-    const saved = localStorage.getItem('darkMode');
-    setDarkMode(saved === '1' || (saved === null && true)); // Default to dark mode if no preference
-    darkModeToggle.addEventListener('click', () => {
-      setDarkMode(!document.body.classList.contains('dark-mode'));
-    });
     // Navbar active link highlight
     const navLinks = document.querySelectorAll('.nav-link');
     window.addEventListener('scroll', () => {
       let current = '';
-      document.querySelectorAll('main section').forEach(section => {
-        const sectionTop = section.offsetTop - 120;
+      document.querySelectorAll('section').forEach(section => {
+        const sectionTop = section.offsetTop - 150;
         if (pageYOffset >= sectionTop) {
           current = section.getAttribute('id');
         }
@@ -255,26 +282,25 @@
         }
       });
     });
-    // Mobile menu toggle logic
+
+    // Mobile menu toggle
     const mobileMenuToggle = document.getElementById('mobileMenuToggle');
     const navLinksContainer = document.getElementById('navLinks');
     mobileMenuToggle.addEventListener('click', () => {
-      navLinksContainer.classList.toggle('open');
-      mobileMenuToggle.classList.toggle('open');
+      navLinksContainer.classList.toggle('mobile');
+      mobileMenuToggle.innerHTML = navLinksContainer.classList.contains('mobile') 
+        ? '<i class="fa-solid fa-xmark"></i>' 
+        : '<i class="fa-solid fa-bars"></i>';
     });
-    // Show/hide mobile menu button based on screen size
-    function handleResize() {
-      if (window.innerWidth <= 700) {
-        mobileMenuToggle.style.display = 'block';
-        navLinksContainer.classList.add('mobile');
-      } else {
-        mobileMenuToggle.style.display = 'none';
-        navLinksContainer.classList.remove('mobile', 'open');
-        mobileMenuToggle.classList.remove('open');
-      }
-    }
-    window.addEventListener('resize', handleResize);
-    handleResize();
+
+    // Close mobile menu when clicking a link
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinksContainer.classList.remove('mobile');
+        mobileMenuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+      });
+    });
+
     // Contact form success message
     document.getElementById('contactForm').addEventListener('submit', function(e) {
       e.preventDefault();
@@ -286,4 +312,4 @@
     });
   </script>
 </body>
-</html> 
+</html>
